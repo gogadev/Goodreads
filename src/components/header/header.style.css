@@ -1,0 +1,25 @@
+header {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.title {
+  width: 82vw;
+  letter-spacing: 5px;
+  background: rgba(247, 247, 247, 0.911);
+  border: 1px solid rgb(233, 231, 231);
+  padding: 0.2rem;
+}
+
+.img {
+  width: 20%;
+}
+
+@media only screen and (max-width: 800px) {
+  .img {
+    width: 40%;
+  }
+}

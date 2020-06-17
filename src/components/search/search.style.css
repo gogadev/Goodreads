@@ -1,0 +1,54 @@
+.form {
+  width: 82vw;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 0.5rem auto;
+}
+
+.form input {
+  width: 100%;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: lightgrey;
+}
+
+select {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-align-last: center;
+  border: 1px dotted grey;
+  background: whitesmoke;
+  outline: lightgrey;
+  transition: all 2s ease;
+  cursor: pointer;
+}
+
+.btn {
+  letter-spacing: 4px;
+  padding: 0 0.3rem;
+  border: 1px dotted grey;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 1.5s ease;
+  outline: lightgrey;
+}
+
+.btn:hover,
+select:hover {
+  transform: scaleX(0.9);
+}
+
+@media only screen and (max-width: 800px) {
+  .form {
+    display: grid;
+  }
+  .btn,
+  select {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

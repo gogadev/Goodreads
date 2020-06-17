@@ -1,0 +1,40 @@
+.book-list {
+  width: 85vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.empty {
+  width: 82vw;
+  background: whitesmoke;
+  transform: translateX(1.5rem);
+}
+
+.image {
+  width: 15%;
+  transform: translateX(-5.5rem);
+  transition: all 1.5s ease-in;
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: scaleY(0.9);
+}
+
+@media only screen and (max-width: 800px) {
+  .book-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .empty {
+    width: 44vw;
+    transform: translateX(1.5rem);
+  }
+  .image {
+    width: 65%;
+  }
+
+}
